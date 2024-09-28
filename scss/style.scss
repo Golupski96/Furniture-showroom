@@ -1,0 +1,175 @@
+@import 'mixins';
+@import 'vars';
+
+@include body;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+h1{
+        color: $tamnoSiva;
+        span {
+            color: $svetloSiva;
+        }
+    }
+nav{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 15px;
+        p{
+            margin-right: 5em;
+        }
+        .pretraga {
+            padding: 0.6em;
+            input {
+                height: 35px;
+                padding-left: 10px;
+                border: 2px solid 2px solid;
+                border-color: black;
+                border-radius: 10px;
+            }
+        }
+}
+.pocetna {
+    
+    img {
+        width: 100%;
+        height: 60%;
+    }
+}
+.galerija {
+    color: $tamnoSiva;
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        color: $tamnoSiva;
+        border-bottom: 1px solid $tamnoSiva;
+        padding-bottom: 0.5em;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+}
+.deloviKuce {
+    width: 60em;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 5em;
+    border: 1px solid $svetloSiva;
+    box-shadow: 5px 5px $svetloSiva; 
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.textDeo {
+        width: 40%;
+        padding: 3em;
+        h4 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1.3em;
+        }
+        button {
+            background-color: $tamnoSiva;
+            padding: 1em;
+            width: 75%;
+            color: white;
+            font-size: 0.8em;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+    }
+.cene {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        color: $tamnoSiva;
+        border-bottom: 1px solid $tamnoSiva;
+        padding-bottom: 0.5em;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+}
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+    tr {
+        border-top: 1px solid $svetloSiva;
+        border-bottom: 1px solid $svetloSiva;
+        th,td {
+            padding: 0.75em 0;
+            text-align: center;
+            text-align: center;
+            color: $tamnoSiva;
+        }
+    }
+
+    tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+    th{
+        background-color: $svetloSiva;
+    }
+.map {
+
+    iframe {
+        width: 100%;
+    }
+}
+footer {
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: $svetloSiva;
+    color: $tamnoSiva;
+    h3 {
+        color: $tamnoSiva;
+        font-size: 2em;
+        border-bottom: 1px solid $tamnoSiva;
+        padding-bottom: 0.5em;
+        
+    }
+    
+}
+@include srednja_verzija {
+    header {
+        font-size: 0.8em;;
+        h1 {
+            padding-right: 15px;
+        }
+        nav {
+            font-size: 0.7em;
+        }
+        .pretraga {
+            input{
+                width: 110px;
+                margin-right: 25px;
+            }
+        }
+    
+}
+.deloviKuce {
+    width: 40em;
+    p{
+        display: none;
+        padding: 10px;
+    }
+}
+footer {
+     div {
+        font-size: 0.6em;
+     }
+}
+}
+
